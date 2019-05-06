@@ -11,3 +11,7 @@
     padding: 10px 0;
     color: #fff;
 }
+
+.add-client-toggle:hover, .edit-client-toggle:hover {
+    background-color: blue;
+}

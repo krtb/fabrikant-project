@@ -1,5 +1,7 @@
-import './css/ClientForm.css'
+import './css/ClientForm.css';
 import React from 'react';
+
+import ClientInfo from './ClientInfo';
 
 const ClientForm = () => {
     return(
@@ -7,6 +9,7 @@ const ClientForm = () => {
             <div className="client-form-submit-button">
                 <button>Add New Client</button>
             </div>
+            <ClientInfo/>
         </div>
     )
 }

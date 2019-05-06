@@ -5,9 +5,9 @@ import Navbar from './Navbar'
 
 const App = () => {
     return (
-        <div class="main-container">
-            <div class="container">
-                <div class="navbar-container">
+        <div className="main-container">
+            <div className="container">
+                <div className="navbar-container">
                     <Navbar/>
                 </div>
             </div>

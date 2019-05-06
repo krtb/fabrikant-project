@@ -9,7 +9,15 @@
     width: 350px;
     background-color: #e4e3e3;
     height: 600px;
-    display: inline-block;
+    display: block;
     float: left;
     overflow: scroll;
+}
+
+.client-info-secondary {
+    width: 500px;
+    background-color: #e4e3e3;
+    height: 600px;
+    display: block;
+    float: right;
 }

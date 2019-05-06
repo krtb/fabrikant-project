@@ -4,7 +4,9 @@ import React from 'react';
 const ClientForm = () => {
     return(
         <div className="client-form-container">
-            CLIENT CONTAINER
+            <div className="client-form-submit-button">
+                <button>Add New Client</button>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,15 @@
+.client-info-container {
+    width: 900px;
+    margin: 40px auto 0;
+    display: inline-block;
+    float: right;
+}
+
+.client-info-primary {
+    width: 350px;
+    background-color: #e4e3e3;
+    height: 600px;
+    display: inline-block;
+    float: left;
+    overflow: scroll;
+}

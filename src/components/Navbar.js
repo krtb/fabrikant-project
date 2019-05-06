@@ -1,13 +1,13 @@
 import './css/Navbar.css'
 import React from 'react';
-
-// import farbikantLogo from '../assets/images/fabrikantLogo5.6.19.png'
+import Logo from '../assets/images/fabrikantLogo5.6.19.png';
 
 const Navbar= () => {
     return(
         <div className='navbar-container'>
             <div className="logo-container">
-                <img source={require(`../assets/images/fabrikantLogo5.6.19.png`)} />
+                LOGO
+                <img src={Logo} alt="fabrikant" />
             </div>
         </div>
     )

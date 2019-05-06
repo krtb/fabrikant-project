@@ -2,7 +2,8 @@ import './css/App.css'
 import React from 'react';
 
 import Navbar from './Navbar'
-import ClientForm from './ClientForm'
+import ClientForm from './ClientContainer'
+import ClientContainer from './ClientContainer';
 
 const App = () => {
     return (
@@ -11,7 +12,7 @@ const App = () => {
                 <div className="navbar-container">
                     <Navbar/>
                 </div>
-                <ClientForm />
+                <ClientContainer />
             </div>
         </div>
     )

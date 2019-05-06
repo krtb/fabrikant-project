@@ -10,8 +10,8 @@ const App = () => {
             <div className="container">
                 <div className="navbar-container">
                     <Navbar/>
-                    <ClientForm/>
                 </div>
+                <ClientForm />
             </div>
         </div>
     )

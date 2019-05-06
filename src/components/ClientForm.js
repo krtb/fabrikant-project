@@ -1,11 +1,9 @@
 import React from 'react';
-import ClientControls from './ClientControls'
+import ClientToggle from './ClientToggle';
 
 const ClientForm = () => {
     return(
-        <div>
-            <ClientControls/>
-        </div>
+        <ClientToggle />
     )
 }
 

@@ -20,3 +20,7 @@
     overflow: scroll;
     height: 700px;
 }
+
+.clear-button {
+    margin-left: 20px;
+}

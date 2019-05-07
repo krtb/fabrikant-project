@@ -5,7 +5,7 @@ const LeftContainer = () => {
     return(
         <div className="left-container">
             <div className="searchbar-container">
-                search bar
+                <button className="clear-button">Clear</button>
             </div>
             <div className="clients-container">
                 clients panel

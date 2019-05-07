@@ -2,7 +2,8 @@
     background-color: #f1f1f1;
     width: 300px;
     display: inline-block;
-    margin: 0;
+    margin-top: -2%;
+    height: 48em;
     overflow: scroll;
     float: left;
 }

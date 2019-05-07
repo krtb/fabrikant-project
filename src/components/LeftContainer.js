@@ -1,9 +1,15 @@
+import './css/LeftContainer.css'
 import React from 'react';
 
 const LeftContainer = () => {
     return(
-        <div>
-            LEFT CONTAINER
+        <div className="left-container">
+            <div className="searchbar-container">
+                search bar
+            </div>
+            <div className="clients-container">
+                clients panel
+            </div>
         </div>
     )
 }

@@ -18,13 +18,6 @@ const ClientForm = (props) => {
 
             </div>
             <ClientInfo/>
-
-            {
-                props.viewDifferentPage ?
-                null :
-                <LeftContainer />
-
-            }
         </div>
     )
 }

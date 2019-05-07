@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 
 import ClientForm from './ClientForm'
 import './css/ClientToggle.css'
-
-
+import LeftContainer from './LeftContainer'
 export class ClientContainer extends React.Component {
     state = {
         viewAddPage: true,
@@ -27,6 +26,11 @@ export class ClientContainer extends React.Component {
     render(){
         return(
             <div>
+                {
+                    this.state.viewEditPage ? 
+                        <LeftContainer /> :
+                        null
+                }
                 <div className="client-toggle-container">
                     <div className="add-client-toggle" onClick={this.addClient}>
                         ADD NEW CLIENT

@@ -1,25 +1,41 @@
 import React, {Component} from 'react';
 
-import ClientToggle from './ClientToggle';
 import ClientForm from './ClientForm'
+import './css/ClientToggle.css'
+
 
 export class ClientContainer extends React.Component {
     state = {
-        viewDifferentPage: false,
+        viewAddPage: true,
+        viewEditPage: false,
     }
 
-    changePage = () => {
-        console.log('is clicked!');
+    editClient = (props) => {        
         this.setState({
-            viewDifferentPage: !this.state.viewDifferentPage
+            viewAddPage: false,
+            viewEditPage: true,
+        })
+    }
+
+    addClient = (props) => {
+        this.setState({
+            viewAddPage: true,
+            viewEditPage: false,
         })
     }
 
     render(){
         return(
             <div>
-                <ClientToggle onClick={this.changePage} />
-                <ClientForm viewDifferentPage={this.state.viewDifferentPage} />
+                <div className="client-toggle-container">
+                    <div className="add-client-toggle" onClick={this.addClient}>
+                        ADD NEW CLIENT
+            </div>
+                    <div className="edit-client-toggle" onClick={this.editClient} >
+                        EDIT CLIENT
+            </div>
+                </div>
+                <ClientForm pageState={this.state}/>
             </div>
         );
     }

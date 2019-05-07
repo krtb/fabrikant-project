@@ -5,16 +5,17 @@ import ClientInfo from './ClientInfo';
 import LeftContainer from './LeftContainer';
 
 const ClientForm = (props) => {
-    console.log('client form', props);
+    console.log('client form', props.pageState.viewAddPage);
     
     return(
         <div className="client-form-container">
             <div className="client-form-submit-button">
             {
-                    props.viewDifferentPage ?
+                    props.pageState.viewAddPage ?
                         <button>Add New Client</button> :
-                        <button>Edit Client</button>
+                        <button>Edit Client</button> 
             }
+
             </div>
             <ClientInfo/>
 

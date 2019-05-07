@@ -3,11 +3,17 @@ import React from 'react';
 
 import ClientInfo from './ClientInfo';
 
-const ClientForm = () => {
+const ClientForm = (props) => {
+    console.log('client form', props);
+    
     return(
         <div className="client-form-container">
             <div className="client-form-submit-button">
-                <button>Add New Client</button>
+            {
+                    props.viewDifferentPage ?
+                        <button>Add New Client</button> :
+                        <button>Edit Client</button>
+            }
             </div>
             <ClientInfo/>
         </div>
